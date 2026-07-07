@@ -1,10 +1,28 @@
+import Link from "next/link";
 import { HeroBackground } from "@/components/three/HeroBackground";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-1 flex-col items-center justify-center overflow-hidden">
+    <main className="relative flex flex-1 flex-col items-center justify-center overflow-hidden px-6 text-center">
       <HeroBackground />
-      <h1 className="relative z-10 text-3xl font-semibold">Home</h1>
+      <div className="relative z-10 flex max-w-2xl flex-col items-center gap-6">
+        <p className="font-mono text-sm uppercase tracking-widest text-muted-foreground">
+          Statistics @ YTÜ
+        </p>
+        <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl">
+          Kutlu Berke
+        </h1>
+        <p className="text-lg text-muted-foreground">
+          Data Scientist in the making — turning messy data into decisions
+          through statistics, machine learning, and applied AI.
+        </p>
+        <Link
+          href="/projects"
+          className="mt-2 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 font-mono text-sm transition-colors hover:border-accent hover:text-accent"
+        >
+          View Projects →
+        </Link>
+      </div>
     </main>
   );
 }
