@@ -2,7 +2,7 @@ import type { Project } from "@/content/projects";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="flex flex-col gap-4 rounded-lg border border-border bg-surface p-6">
+    <article className="flex h-full flex-col gap-4 rounded-lg border border-border bg-surface p-6">
       <div className="flex flex-col gap-1">
         <h2 className="font-display text-xl font-semibold tracking-tight">
           {project.title}
