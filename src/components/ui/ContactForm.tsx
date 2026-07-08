@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { LiquidGlassButton } from "@/components/ui/LiquidGlassButton";
 
 const CONTACT_EMAIL = "kberkeyldrm@gmail.com";
 
@@ -71,12 +72,9 @@ export function ContactForm() {
         />
       </div>
 
-      <button
-        type="submit"
-        className="mt-2 inline-flex w-fit items-center gap-2 rounded-full border border-border px-5 py-2.5 font-mono text-sm transition-colors hover:border-accent hover:text-accent"
-      >
+      <LiquidGlassButton type="submit" className="mt-2 w-fit">
         Send message
-      </button>
+      </LiquidGlassButton>
     </form>
   );
 }

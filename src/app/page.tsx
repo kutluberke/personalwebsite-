@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { HeroBackground } from "@/components/three/HeroBackground";
 import { FadeIn } from "@/components/motion/FadeIn";
+import { LiquidGlassButton } from "@/components/ui/LiquidGlassButton";
 
 export default function Home() {
   return (
@@ -24,12 +24,9 @@ export default function Home() {
           </p>
         </FadeIn>
         <FadeIn delay={0.3}>
-          <Link
-            href="/projects"
-            className="mt-2 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 font-mono text-sm transition-colors hover:border-accent hover:text-accent"
-          >
+          <LiquidGlassButton href="/projects" className="mt-2">
             View Projects →
-          </Link>
+          </LiquidGlassButton>
         </FadeIn>
       </div>
     </main>
